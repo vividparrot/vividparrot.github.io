@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Loan EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🏠 Home Loan EMI Calculator</h1>
+        <p class="subtitle">Calculate your monthly EMI, view amortization schedule, and plan prepayments</p>
+    </header>
+
+    <main>
+        <!-- Loan Input Section -->
+        <section class="card input-card">
+            <h2>Loan Details</h2>
+            <div class="input-group">
+                <label for="loanAmount">Loan Amount (₹)</label>
+                <div class="slider-input">
+                    <input type="range" id="loanAmountSlider" min="100000" max="50000000" step="100000" value="20000000">
+                    <input type="number" id="loanAmount" min="100000" max="500000000" step="10000" value="20000000">
+                </div>
+                <span class="amount-words" id="loanAmountWords"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="interestRate">Annual Interest Rate (%)</label>
+                <div class="slider-input">
+                    <input type="range" id="interestRateSlider" min="1" max="20" step="0.05" value="7.4">
+                    <input type="number" id="interestRate" min="1" max="30" step="0.01" value="7.4">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="loanTenure">Loan Tenure</label>
+                <div class="tenure-row">
+                    <div class="slider-input tenure-slider">
+                        <input type="range" id="loanTenureSlider" min="1" max="30" step="1" value="30">
+                        <input type="number" id="loanTenure" min="1" max="30" step="1" value="30">
+                    </div>
+                    <div class="tenure-toggle">
+                        <button id="tenureYears" class="toggle-btn active">Years</button>
+                        <button id="tenureMonths" class="toggle-btn">Months</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prepayment Section -->
+        <section class="card prepayment-card">
+            <h2>Prepayment Options <span class="badge">Optional</span></h2>
+            <div class="prepayment-types">
+                <div class="input-group">
+                    <label for="extraMonthlyPayment">Extra Monthly Payment (₹)</label>
+                    <input type="number" id="extraMonthlyPayment" min="0" step="1000" value="0" placeholder="0">
+                    <span class="hint">Additional amount paid every month on top of EMI</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="yearlyLumpsum">Recurring Yearly Lump-Sum (₹)</label>
+                    <input type="number" id="yearlyLumpsum" min="0" step="10000" value="0" placeholder="0">
+                    <div class="yearly-lumpsum-options">
+                        <label for="yearlyLumpsumMonth">Applied in month</label>
+                        <select id="yearlyLumpsumMonth">
+                            <option value="1">January (Month 1)</option>
+                            <option value="2">February (Month 2)</option>
+                            <option value="3">March (Month 3)</option>
+                            <option value="4" selected>April (Month 4)</option>
+                            <option value="5">May (Month 5)</option>
+                            <option value="6">June (Month 6)</option>
+                            <option value="7">July (Month 7)</option>
+                            <option value="8">August (Month 8)</option>
+                            <option value="9">September (Month 9)</option>
+                            <option value="10">October (Month 10)</option>
+                            <option value="11">November (Month 11)</option>
+                            <option value="12">December (Month 12)</option>
+                        </select>
+                    </div>
+                    <span class="hint">Fixed amount paid once every year (e.g. from annual bonus)</span>
+                </div>
+
+                <div class="lumpsum-section">
+                    <h3>One-Time Lump-Sum Prepayments</h3>
+                    <div id="lumpsumList"></div>
+                    <button id="addLumpsumBtn" class="btn-secondary">+ Add Lump-Sum Payment</button>
+                </div>
+            </div>
+        </section>
+
+        <button id="calculateBtn" class="btn-primary">Calculate EMI</button>
+
+        <!-- Results Section -->
+        <section class="card results-card" id="resultsSection" style="display:none;">
+            <h2>EMI Summary</h2>
+            <div class="results-grid">
+                <div class="result-item emi">
+                    <span class="result-label">Monthly EMI</span>
+                    <span class="result-value" id="monthlyEmi">-</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Total Interest</span>
+                    <span class="result-value" id="totalInterest">-</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Total Payment</span>
+                    <span class="result-value" id="totalPayment">-</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Loan Tenure</span>
+                    <span class="result-value" id="tenureDisplay">-</span>
+                </div>
+            </div>
+
+            <!-- Prepayment Savings -->
+            <div class="savings-comparison" id="savingsSection" style="display:none;">
+                <h3>💰 Prepayment Savings</h3>
+                <div class="savings-grid">
+                    <div class="savings-item savings-positive">
+                        <span class="savings-label">Interest Saved</span>
+                        <span class="savings-value" id="interestSaved">-</span>
+                    </div>
+                    <div class="savings-item savings-positive">
+                        <span class="savings-label">Tenure Reduced</span>
+                        <span class="savings-value" id="tenureReduced">-</span>
+                    </div>
+                    <div class="savings-item">
+                        <span class="savings-label">Original Total Interest</span>
+                        <span class="savings-value" id="originalInterest">-</span>
+                    </div>
+                    <div class="savings-item">
+                        <span class="savings-label">Original Tenure</span>
+                        <span class="savings-value" id="originalTenure">-</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="card charts-card" id="chartsSection" style="display:none;">
+            <h2>Visual Breakdown</h2>
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Payment Split</h3>
+                    <canvas id="pieChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Year-wise Principal vs Interest</h3>
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amortization Schedule Section -->
+        <section class="card amortization-card" id="amortizationSection" style="display:none;">
+            <div class="amortization-header">
+                <h2>Amortization Schedule</h2>
+                <div class="amortization-controls">
+                    <button id="expandAllBtn" class="btn-secondary btn-sm">Expand All</button>
+                    <button id="collapseAllBtn" class="btn-secondary btn-sm">Collapse All</button>
+                    <button id="printBtn" class="btn-secondary btn-sm">🖨️ Print</button>
+                </div>
+            </div>
+            <div class="table-wrapper" id="amortizationTable"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Home Loan EMI Calculator &bull; For informational purposes only</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
