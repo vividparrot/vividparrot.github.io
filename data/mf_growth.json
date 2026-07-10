@@ -1887,7 +1887,7 @@
     "schemeCode": 101818,
     "schemeName": "Aditya Birla Sun Life Regular Savings Fund - Growth / Payment - Regular Plan",
     "isinGrowth": "INF209K01751",
-    "isinDivReinvestment": "INF209K01777"
+    "isinDivReinvestment": null
   },
   {
     "schemeCode": 101824,
@@ -2137,14 +2137,14 @@
   },
   {
     "schemeCode": 102009,
-    "schemeName": "UTI-  Liquid Cash Plan- Discontinued - Regular Plan -Growth",
-    "isinGrowth": "INF789F01BB4",
+    "schemeName": "UTI Liquid Fund - Discontinued - Regular Plan -Growth",
+    "isinGrowth": "INF789F1AG35",
     "isinDivReinvestment": null
   },
   {
     "schemeCode": 102012,
-    "schemeName": "UTI-  Liquid Cash Plan - Regular Plan - Growth Option",
-    "isinGrowth": "INF789F01PH1",
+    "schemeName": "UTI Liquid Fund - Regular Plan - Growth Option",
+    "isinGrowth": "INF789F1AF85",
     "isinDivReinvestment": null
   },
   {
@@ -3685,7 +3685,7 @@
   },
   {
     "schemeCode": 103192,
-    "schemeName": "Aditya Birla Sun Life Low Duration Fund - Growth Plan",
+    "schemeName": "Aditya Birla Sun Life Low Duration Fund -Regular- Growth Plan",
     "isinGrowth": "INF209K01LQ0",
     "isinDivReinvestment": null
   },
@@ -6313,7 +6313,7 @@
   },
   {
     "schemeCode": 104683,
-    "schemeName": "ICICI Prudential Equity Arbitrage Fund - Growth",
+    "schemeName": "ICICI Prudential Arbitrage Fund - Growth",
     "isinGrowth": "INF109K01BF6",
     "isinDivReinvestment": null
   },
@@ -11065,7 +11065,7 @@
   },
   {
     "schemeCode": 106793,
-    "schemeName": "HDFC ARBITRAGE FUND - Wholesale Growth Option",
+    "schemeName": "HDFC ARBITRAGE FUND - Regular Plan -Growth Option",
     "isinGrowth": "INF179K01343",
     "isinDivReinvestment": null
   },
@@ -26275,7 +26275,7 @@
   },
   {
     "schemeCode": 115132,
-    "schemeName": "Quantum Gold Savings Fund - Direct Plan Growth Option",
+    "schemeName": "Quantum Gold ETF FOF - Direct Plan Growth Option",
     "isinGrowth": "INF082J01150",
     "isinDivReinvestment": null
   },
@@ -36901,8 +36901,8 @@
   },
   {
     "schemeCode": 120304,
-    "schemeName": "UTI-  Liquid Cash Plan - Direct Plan - Growth Option",
-    "isinGrowth": "INF789F01XQ6",
+    "schemeName": "UTI Liquid Fund - Direct Plan - Growth Option",
+    "isinGrowth": "INF789F1AD46",
     "isinDivReinvestment": null
   },
   {
@@ -37063,7 +37063,7 @@
   },
   {
     "schemeCode": 120364,
-    "schemeName": "ICICI Prudential Equity Arbitrage Fund - Direct Plan - Growth",
+    "schemeName": "ICICI Prudential Arbitrage Fund - Direct Plan - Growth",
     "isinGrowth": "INF109K016O4",
     "isinDivReinvestment": null
   },
@@ -37827,7 +37827,7 @@
     "schemeCode": 120705,
     "schemeName": "Aditya Birla Sun Life Regular Savings Fund - Growth / Payment - Direct Plan",
     "isinGrowth": "INF209K01XH4",
-    "isinDivReinvestment": "INF209K01XJ0"
+    "isinDivReinvestment": null
   },
   {
     "schemeCode": 120706,
@@ -51391,7 +51391,7 @@
   },
   {
     "schemeCode": 129052,
-    "schemeName": "HDFC ARBITRAGE FUND - Wholesale Growth Option - Direct Plan",
+    "schemeName": "HDFC ARBITRAGE FUND -Direct Plan - Growth Option",
     "isinGrowth": "INF179KA1KT6",
     "isinDivReinvestment": null
   },
@@ -57211,7 +57211,7 @@
   },
   {
     "schemeCode": 134494,
-    "schemeName": "Quantum Dynamic Bond Fund - Direct Plan Growth Option",
+    "schemeName": "Quantum Dynamic Term Fund - Direct Plan Growth Option",
     "isinGrowth": "INF082J01176",
     "isinDivReinvestment": null
   },
@@ -64099,7 +64099,7 @@
   },
   {
     "schemeCode": 141061,
-    "schemeName": "Quantum Dynamic Bond Fund - Regular Plan Growth Option",
+    "schemeName": "Quantum Dynamic Term Fund - Regular Plan Growth Option",
     "isinGrowth": "INF082J01218",
     "isinDivReinvestment": null
   },
@@ -64111,7 +64111,7 @@
   },
   {
     "schemeCode": 141064,
-    "schemeName": "Quantum Gold Savings Fund - Regular Plan Growth Option",
+    "schemeName": "Quantum Gold ETF FOF - Regular Plan Growth Option",
     "isinGrowth": "INF082J01358",
     "isinDivReinvestment": null
   },
@@ -76261,13 +76261,13 @@
   },
   {
     "schemeCode": 148747,
-    "schemeName": "Motilal Oswal Asset Allocation FOF- A- Direct Growth",
+    "schemeName": "Motilal Oswal Multi Asset Passive Fund of Fund - Direct Growth",
     "isinGrowth": "INF247L01AL2",
     "isinDivReinvestment": null
   },
   {
     "schemeCode": 148748,
-    "schemeName": "Motilal Oswal Asset Allocation FOF- A- Regular Growth",
+    "schemeName": "Motilal Oswal Multi Asset Passive Fund of Fund - Regular Growth",
     "isinGrowth": "INF247L01AM0",
     "isinDivReinvestment": null
   },
@@ -78787,13 +78787,13 @@
   },
   {
     "schemeCode": 150389,
-    "schemeName": "Quantum Nifty 50 ETF Fund of Fund - Regular Plan - Growth",
+    "schemeName": "Quantum Nifty 50 ETF FOF - Regular Plan - Growth",
     "isinGrowth": "INF082J01424",
     "isinDivReinvestment": null
   },
   {
     "schemeCode": 150390,
-    "schemeName": "Quantum Nifty 50 ETF Fund of Fund - Direct Plan - Growth",
+    "schemeName": "Quantum Nifty 50 ETF FOF - Direct Plan - Growth",
     "isinGrowth": "INF082J01416",
     "isinDivReinvestment": null
   },
@@ -88653,6 +88653,168 @@
     "schemeCode": 154334,
     "schemeName": "SBI CRISIL - IBX Financial Services 9-12 Months Debt Index Fund - Direct Plan - Growth",
     "isinGrowth": "INF200KB1AU7",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154337,
+    "schemeName": "Motilal Oswal Contra Fund - Direct – Growth",
+    "isinGrowth": "INF247L01GW6",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154338,
+    "schemeName": "Motilal Oswal Contra Fund - Regular – Growth",
+    "isinGrowth": "INF247L01GZ9",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154340,
+    "schemeName": "Invesco India BSE Sensex Index Fund - Direct Plan - Growth",
+    "isinGrowth": "INF205KA1BM8",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154342,
+    "schemeName": "Invesco India BSE Sensex Index Fund - Regular Plan - Growth",
+    "isinGrowth": "INF205KA1BL0",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154343,
+    "schemeName": "Invesco India Nifty Bank Index Fund - Direct Plan - Growth",
+    "isinGrowth": "INF205KA1BO4",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154344,
+    "schemeName": "Invesco India Nifty Bank Index Fund - Regular Plan - Growth",
+    "isinGrowth": "INF205KA1BN6",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154346,
+    "schemeName": "Groww Nifty Private Bank Index Fund Direct Growth",
+    "isinGrowth": "INF666M01OU3",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154350,
+    "schemeName": "Groww Nifty Private Bank Index Fund Regular Growth",
+    "isinGrowth": "INF666M01OX7",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154362,
+    "schemeName": "SBI Nifty G-sec Jul 2031 Index Fund - REGULAR - GROWTH",
+    "isinGrowth": "INF200KB1AZ6",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154363,
+    "schemeName": "SBI CRISIL-IBX 10:90 Gilt + SDL Index - Dec 2029 Index Fund - Regular - Growth",
+    "isinGrowth": "INF200KB1BF6",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154365,
+    "schemeName": "Motilal Oswal BSE Clean Environment Index Fund - Growth",
+    "isinGrowth": "INF247L01HD4",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154370,
+    "schemeName": "SBI CRISIL-IBX 10:90 GILT + SDL INDEX DEC 2029 INDEX FUND - DIRECT - GROWTH",
+    "isinGrowth": "INF200KB1BI0",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154372,
+    "schemeName": "SBI NIFTY G-SEC JUL 2031 INDEX FUND - DIRECT - GROWTH",
+    "isinGrowth": "INF200KB1BC3",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154381,
+    "schemeName": "The Wealth Company Large & Mid Cap Fund Direct Growth",
+    "isinGrowth": "INF2F0001594",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154382,
+    "schemeName": "The Wealth Company Large & Mid Cap Fund Regular Growth",
+    "isinGrowth": "INF2F0001560",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154383,
+    "schemeName": "Groww Nifty Smallcap 250 Momentum Quality 100 Index Fund Direct Growth",
+    "isinGrowth": "INF666M01PA2",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154387,
+    "schemeName": "Groww Nifty Smallcap 250 Momentum Quality 100 Index Fund Regular Growth",
+    "isinGrowth": "INF666M01PD6",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154388,
+    "schemeName": "Kotak Nifty Alpha Low Volatility 30 Index Fund - Direct- Growth",
+    "isinGrowth": "INF174KA1A29",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154389,
+    "schemeName": "Kotak Nifty Alpha Low Volatility 30 Index Fund - Regular - Growth",
+    "isinGrowth": "INF174KA1A52",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154392,
+    "schemeName": "WhiteOak Capital Aggressive Hybrid Fund Direct Plan Growth",
+    "isinGrowth": "INF03VN01AF8",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154393,
+    "schemeName": "WhiteOak Capital Aggressive Hybrid Fund Regular Plan Growth",
+    "isinGrowth": "INF03VN01AG6",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154394,
+    "schemeName": "Shriram Overnight Fund- Direct Growth",
+    "isinGrowth": "INF680P01497",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154399,
+    "schemeName": "Shriram Overnight Fund- Regular Growth",
+    "isinGrowth": "INF680P01505",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154413,
+    "schemeName": "Choice Overnight Fund - Growth Option - Direct Plan",
+    "isinGrowth": null,
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154415,
+    "schemeName": "Choice Overnight Fund - Growth Option - Regular Plan",
+    "isinGrowth": null,
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154427,
+    "schemeName": "HDFC Nifty Auto Index Fund- Direct Plan- Growth Option",
+    "isinGrowth": "INF179KC1KQ0",
+    "isinDivReinvestment": null
+  },
+  {
+    "schemeCode": 154428,
+    "schemeName": "HDFC Nifty Auto Index Fund- Growth Option",
+    "isinGrowth": "INF179KC1KP2",
     "isinDivReinvestment": null
   }
 ]
